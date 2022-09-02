@@ -1,13 +1,11 @@
 import React from "react";
-import { Form } from "./components/form/Form";
-import { Body, Container } from "./styles";
+import { Form } from "./components/Form/Form";
+import { Container } from "./styles";
 
 export const App = () => {
   return (
-    <Body>
-      <Container>
-        <Form />
-      </Container>
-    </Body>
+    <Container>
+      <Form />
+    </Container>
   );
 };

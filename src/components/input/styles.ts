@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const CustomInput = styled.input`
+const StyledInput = styled.input`
   border-radius: 30px;
   border: none;
   margin-bottom: 33px;
@@ -9,6 +9,11 @@ const CustomInput = styled.input`
   text-align: center;
   font-size: 18px;
   line-height: 26px;
+  ::-webkit-outer-spin-button,
+  ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 `;
 
-export { CustomInput };
+export { StyledInput };

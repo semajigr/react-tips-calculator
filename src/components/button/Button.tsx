@@ -1,14 +1,14 @@
 import React from "react";
-import { CustomButton } from "../button/styles";
+import { CustomButton } from "./styles";
 
 interface IProps {
-  type: "submit" | "button" | "reset" | undefined;
-  disabled: boolean;
+  type: "submit" | "button" | "reset";
+  isDisabled: boolean;
 }
 
-export const Button = ({ disabled, type }: IProps) => {
+export const Button = ({ isDisabled, type }: IProps) => {
   return (
-    <CustomButton disabled={disabled} type={type}>
+    <CustomButton disabled={isDisabled} type={type}>
       Ohhhoooo 🍻
     </CustomButton>
   );

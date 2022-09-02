@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const CustomForm = styled.form`
+const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   max-width: 456px;
@@ -25,10 +25,10 @@ const Description = styled.h3`
 `;
 
 const Tips = styled.p`
-  margin-block: 45px;
   font-weight: bold;
   font-size: 24px;
   line-height: 35px;
+  margin-block: 45px;
 `;
 
-export { CustomForm, Title, Description, Tips };
+export { StyledForm, Title, Description, Tips };

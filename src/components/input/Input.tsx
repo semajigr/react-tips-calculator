@@ -1,17 +1,15 @@
-import React, { ChangeEventHandler } from "react";
-import { CustomInput } from "../input/styles";
+import React, { ChangeEvent } from "react";
+import { StyledInput } from "./styles";
 import { useInput } from "../../hooks/useInput";
 
 interface IProps {
   type: string;
   placeholder: string;
-  onChange: ChangeEventHandler<HTMLInputElement> | undefined;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const Input = ({ type, placeholder, onChange }: IProps) => {
   return (
-    <>
-      <CustomInput type={type} placeholder={placeholder} onChange={onChange} />
-    </>
+    <StyledInput type={type} placeholder={placeholder} onChange={onChange} />
   );
 };
